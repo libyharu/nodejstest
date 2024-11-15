@@ -5,7 +5,8 @@ const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "text/plain");
   res.end("Hello, World!\n");
 });
+const port = 3000;
 
-server.listen(3000, "localhost", () => {
-  console.log("Server running at http://localhost:3000/testing/");
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on http://0.0.0.0:${port}`);
 });
